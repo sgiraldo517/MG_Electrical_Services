@@ -88,6 +88,11 @@ a {
         padding: 48px 80px;
     }
 
+    .imagenes{
+        display: flex;
+        align-items: center;
+    }
+
     .imagenes #img1 {
         width: 233px;
         height: 214px;
@@ -129,6 +134,8 @@ a {
     .seccion_3{
         background: #017EA7;
         padding: 48px 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
     }
 
     .seccion_3 h2{
@@ -156,6 +163,18 @@ a {
         font-size: 16px;
         line-height: 24px;
         color: #FAFAFA;
+    }
+
+    article{
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    .parte_superior{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        display: flex;
+        align-items: center;
     }
 
 /* Estilos About Us */
