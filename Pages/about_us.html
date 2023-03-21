@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="../css/bootstrap.css">
+     <!-- custom styles -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,36 +54,38 @@
         <!-- Fin seccion 1-->
 
         <!-- Seccion 2: Our Services -->
-            <section class="seccion_2_about_us">
-                <!-- Titulo -->
-                <h2 id="our_services">Our Services</h2>
-                <!-- Fin titulo-->
-                <!-- Opciones -->
-                <div class="opciones">
-                    <!-- Parte 1 -->
-                    <div>
-                        <div>
-                            <h3>Instalations</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+            <section class="seccion_2_about_us" class="container-sm">
+                <div class="row">
+                    <!-- Titulo -->
+                    <h2 id="our_services" class ="col">Our Services</h2>
+                    <!-- Fin titulo-->
+                    <!-- Opciones -->
+                    <div class="opciones">
+                        <!-- Parte 1 -->
+                        <div class ="col">
+                            <div>
+                                <h3>Instalations</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                            </div>
+                            <div>
+                                <h3>Electrical Upgrades</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3>Electrical Upgrades</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                        <!-- Fin parte 1-->
+                        <!-- Parte 2 -->
+                        <div class ="col">
+                            <div>
+                                <h3>Electrical Repairs</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                            </div>
+                            <div>
+                                <h3>Electrical Wiring</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                            </div>
                         </div>
+                        <!-- Fin parte 2-->
                     </div>
-                    <!-- Fin parte 1-->
-                    <!-- Parte 2 -->
-                    <div>
-                        <div>
-                            <h3>Electrical Repairs</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
-                        </div>
-                        <div>
-                            <h3>Electrical Wiring</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
-                        </div>
-                    </div>
-                    <!-- Fin parte 2-->
                 </div>
                 <!-- Fin opciones-->
             </section>
@@ -89,8 +94,7 @@
 <!-- Fin del main-->
 
 <!-- Footer -->
-<!-- Footer -->
-<footer>
+<footer class="footer_lg">
     <!-- Parte 1: Titulo + Redes -->
     <div class="titulo_redes">
         <h2>MG Electrical Services</h2>
@@ -104,8 +108,8 @@
     <div class="centrar">
         <h3>Company</h3>
         <ul class="paginas">
-            <li><a href="Pages/about_us.html">About Us</a></li>
-            <li><a href="Pages/contact_us.html">Contact Us</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
     </div>
     <!-- Fin parte 2 -->
@@ -117,6 +121,34 @@
     <!-- Fin parte 3 -->
 </footer>
 <!-- Fin footer -->
+
+<!-- Footer Mobile-->
+<footer class="footer_mobile" class="container-sm">
+    <!-- Parte 1: Titulo + Redes -->
+    <div class="row" class="titulo_redes">
+        <div class = "col-9"><h2>MG Electrical Services</h2></div>
+        <div class = "col-3">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.7em; color: #1F2937; padding-right: 2%;"></i>
+            <i class="fa-brands fa-instagram" style="font-size: 1.7em; color: #1F2937"></i>
+        </div>
+    </div>
+    <!-- Fin parte 1 -->
+    <!-- Parte 2: Paginas -->
+    <div class="centrar">
+        <h3>Company</h3>
+        <ul class="paginas">
+            <li><a href="#">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Fin parte 2 -->
+    <!-- Parte 3: Need more infomation -->
+    <div class="centrar">
+        <h3>Need more information?</h3>
+        <input type="email" id="mail" name="user_mail" placeholder="Enter your email">
+    </div>
+    <!-- Fin parte 3 -->
+</footer>
 
 </body>
 </html>
