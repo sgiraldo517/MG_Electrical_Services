@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    padding: 0%;
+}
+
 /* Estilos generales */
 
 /* Header */
@@ -72,7 +76,8 @@ a {
 
     form .info_inicial{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        padding: 0%;
     }
 
     form input {
@@ -96,7 +101,7 @@ a {
         margin-left: 1vh;
     }
 
-    form textarea{
+    .form_index textarea{
         border: none;
         border-radius: 4px;
         height: 10vh;
@@ -149,6 +154,8 @@ footer {
     justify-content: space-evenly;
     height: 25vh;
     background: #E5E7EB;
+    margin: 0;
+    width:auto;
 }
 
 footer .centrar {
@@ -207,6 +214,10 @@ footer input{
     border: 1px solid #D1D5DB;
     border-radius: 0px;
     margin-top: 1vh;
+}
+
+footer .icons {
+    display: flex;
 }
 
     /* Estilos Home */
@@ -348,6 +359,7 @@ footer input{
             line-height: 40px;
             color: #1F2937;
             padding: 3vh;
+            margin: 5vh 10vh 0.5vh;
         }
 
         .seccion_2_about_us h3{
@@ -372,6 +384,70 @@ footer input{
 
     /* Estilos Contact Us */
 
+        .container_contact_us {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 10vh 5vw;
+            background: #F3F4F6;
+            border-radius: 6px;
+            padding: 5vh;
+        }
+
+        .seccion_1_contact_us {
+            background-color: #014A73;
+            margin-right: 3vw;
+            padding: 5vh;
+        }
+
+        .seccion_1_contact_us h1 {
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: #FFFFFF;        
+        }
+
+        .seccion_1_contact_us p {
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+
+        .seccion_2_contact_us {
+            background: #FFFFFF;
+            border-radius: 6px;
+        }
+
+        .seccion_2_contact_us_info_inicial {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        
+
+        .seccion_2_contact_us h3 {
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: #1F2937;
+            padding: 5vh 10px 0px;
+            margin-left: 1vh;
+        }
+
+        .seccion_2_contact_us input, .seccion_2_contact_us textarea {
+            border: 1px solid #E5E7EB;
+            border-radius: 4px;
+        }
+
+        .seccion_2_contact_us textarea {
+            margin-top: 10px;
+            height: 35vh;
+        }
 
 
 /* Pseudo Clases */
@@ -382,7 +458,86 @@ button:hover{
     cursor: pointer;
 }
 
+/* Media Queries */
 
+    /* Media Queries Version Mobile */
+
+    @media (max-width: 576px) {
+
+        /* Elementos Ocultos */
+
+        .imagenes {
+        display: none;
+        }
+
+        .seccion_3 {
+            display: none;
+        }
+
+        footer .centrar {
+            display: none;
+        }
+
+        .footer_lg {
+            display:none;
+        }
+
+        /* Media queries Footer */
+
+        footer {
+            display: block;
+            height: fit-content;
+            padding: 3vh;
+        }
+
+        footer h2 {
+            padding-left: 5vw;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+            /* Media queries Index */
+
+            article {
+                width: 100vw;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            /* Media queries About Us */
+
+            .about_us {
+                height: fit-content;
+                padding-top: 5vh;
+            }
+
+            .opciones {
+                display: block;
+            }
+
+            .seccion_2_about_us h2 {
+                margin: 5vh 10vh 0.5vh;
+            }
+
+    }
+
+    /* Media Queries Desktop */
+
+    @media (min-width: 577px) {
+        .footer_mobile {
+            display: none;
+        }
+    }
+
+    
+
+    
+
+    
 
 
 
