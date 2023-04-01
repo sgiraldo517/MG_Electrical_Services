@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-weight: 0;
 }
 
 a {
@@ -482,12 +483,38 @@ button:hover{
             display:none;
         }
 
+        /* Navbar Mobile Version */ 
+
+        .navbar {
+            padding-left: 3vw;
+        }
+
+        .nav_bar_version_mobile {
+            background-color: #017EA7;
+        }
+        
+        .navbar ul {
+            padding-top: 1vh;
+            padding-bottom: 0;
+        }
+
+        .navbar_mobile_li a {
+            text-decoration: none;
+            color: #D1D5DB;
+            font-family: 'Work Sans';
+            padding-left: 3vw;
+        }
+
         /* Media queries Footer */
 
         footer {
             display: block;
             height: fit-content;
             padding: 3vh;
+        }
+
+        .nav_bar_desktop_version {
+            display: none;
         }
 
         footer h2 {
@@ -508,6 +535,22 @@ button:hover{
                 justify-content: space-between;
             }
 
+            form .info_inicial{
+                display: flex;
+                flex-direction: column;
+                justify-content: wrap;
+
+            }
+
+            form .form_mobile {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form_mobile {
+                padding-top: 2vh; 
+            }
+
             /* Media queries About Us */
 
             .about_us {
@@ -523,12 +566,35 @@ button:hover{
                 margin: 5vh 10vh 0.5vh;
             }
 
+            /* Media queries Contact Us*/
+
+            .container_contact_us {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                
+            }
+
+            iframe {
+                width: 50vw;
+            }
+
+            .seccion_1_contact_us {
+                margin-right: 0;
+                margin-bottom: 2vh;
+            }
+
+
     }
 
     /* Media Queries Desktop */
 
     @media (min-width: 577px) {
         .footer_mobile {
+            display: none;
+        }
+
+        .nav_bar_version_mobile {
             display: none;
         }
     }
