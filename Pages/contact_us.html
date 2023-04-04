@@ -7,11 +7,12 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- custom styles -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/c20f16dd22.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name = "description" content = "MG Electrical Services. We offer electrical services in all Florida State including instalations, repairs, wiring and upgrades.">
     <title>Contact Us</title>
 </head>
 
@@ -24,7 +25,7 @@
         </div>
         <!-- Fin logo -->
         <!-- Barra de navegacion -->
-        <nav>
+        <nav class = "nav_bar_desktop_version">
             <ul class="menu">
                 <li class="barra_navegacion"><a href="../index.html">Home |</a></li>
                 <li class="barra_navegacion"><a href="about_us.html">About Us |</a></li>
@@ -32,6 +33,24 @@
             </ul>
         </nav>
         <!-- Fin barra de navegacion -->
+
+        <!-- Barra de navegacion - Version Mobile -->
+        <div class = "nav_bar_version_mobile">
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul>
+                        <li class = navbar_mobile_li><a href="../index.html">Home</a></li>
+                        <li class = navbar_mobile_li><a href="about_us.html">About Us</a></li>
+                        <li class = navbar_mobile_li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Fin barra de navegacion - Version Mobile -->
+
     </header>
 <!-- Fin encabezado -->
 
@@ -96,7 +115,8 @@
 <!-- Fin del main -->
 
 <!-- Footer -->
-<footer>
+<!-- Footer -->
+<footer class="footer_lg">
     <!-- Parte 1: Titulo + Redes -->
     <div class="titulo_redes">
         <h2>MG Electrical Services</h2>
@@ -110,8 +130,37 @@
     <div class="centrar">
         <h3>Company</h3>
         <ul class="paginas">
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="Pages/about_us.html">About Us</a></li>
+            <li><a href="Pages/contact_us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Fin parte 2 -->
+    <!-- Parte 3: Need more infomation -->
+    <div class="centrar">
+        <h3>Need more information?</h3>
+        <input type="email" id="mail" name="user_mail" placeholder="Enter your email">
+    </div>
+    <!-- Fin parte 3 -->
+</footer>
+<!-- Fin footer -->
+
+<!-- Footer Mobile-->
+<footer class="footer_mobile" class="container-sm">
+    <!-- Parte 1: Titulo + Redes -->
+    <div class="row" class="titulo_redes">
+        <div class = "col-9"><h2>MG Electrical Services</h2></div>
+        <div class = "col-3">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.7em; color: #1F2937; padding-right: 2%;"></i>
+            <i class="fa-brands fa-instagram" style="font-size: 1.7em; color: #1F2937"></i>
+        </div>
+    </div>
+    <!-- Fin parte 1 -->
+    <!-- Parte 2: Paginas -->
+    <div class="centrar">
+        <h3>Company</h3>
+        <ul class="paginas">
+            <li><a href="#">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
     </div>
     <!-- Fin parte 2 -->
@@ -124,5 +173,10 @@
 </footer>
 <!-- Fin footer -->
 </body>
+
+<!-- Js -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
