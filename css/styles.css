@@ -384,6 +384,11 @@ article {
   padding: 5vh;
 }
 
+iframe {
+  width: 30vw;
+  height: 50vh;
+}
+
 .seccion_1_contact_us {
   background-color: #014A73;
   margin-right: 3vw;
@@ -430,12 +435,12 @@ article {
 }
 
 .seccion_2_contact_us input {
-  border: 1px solid #E5E7EB;
+  border: 1px solid #a3a3a3;
   border-radius: 4px;
 }
 
 .seccion_2_contact_us textarea {
-  border: 1px solid #E5E7EB;
+  border: 1px solid #a3a3a3;
   border-radius: 4px;
   margin-top: 10px;
   height: 35vh;
@@ -528,7 +533,7 @@ button:hover {
     justify-content: space-evenly;
   }
   iframe {
-    width: 50vw;
+    width: 40vw;
   }
   .seccion_1_contact_us {
     margin-right: 0;
