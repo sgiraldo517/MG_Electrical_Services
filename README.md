@@ -11,4 +11,4 @@ Visualiza las fuentes usadas en el siguiente link:
 - [Work Sans](https://fonts.google.com/specimen/Work+Sans)
 
 ## Link a la pagina: Infinite Free Host
-Ver pagina web [aquí](https://mgelectricalservices.epizy.com)
+Ver pagina web [aquí](http://mgelectricalservices.epizy.com/index.html)
