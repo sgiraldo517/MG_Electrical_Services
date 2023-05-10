@@ -7,14 +7,14 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- custom styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/c20f16dd22.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="Recursos/Img/favicon.png">
+    <link rel="icon" type="image/png" href="recursos/img/favicon.png">
     <!-- SEO -->
     <meta name = "description" content = "MG Electrical Services. We offer electrical services in all Florida State including instalations, repairs, wiring and upgrades.">
     <meta name = "keywords" content = "electrical, services, electrical services, USA, Florida, repairs, wiring, upgrades, intalations, electrician">
@@ -26,15 +26,15 @@
     <header>
         <!-- Logo -->
         <div class ="seccion_logo">
-            <img id="logo" src="Recursos/Img/Logo_opcion1.png" alt="logo MG">
+            <img id="logo" src="recursos/img/Logo_opcion1.png" alt="logo MG">
         </div>
 		<!-- Fin logo -->
         <!-- Barra de navegacion -->
         <nav class = "nav_bar_desktop_version">
 			<ul class="menu">
 				<li class="barra_navegacion"><a href="#">Home |</a></li>
-				<li class="barra_navegacion"><a href="Pages/about_us.html">About Us |</a></li>
-				<li class="barra_navegacion"><a href="Pages/contact_us.html">Contact Us</a></li>
+				<li class="barra_navegacion"><a href="pages/about_us.html">About Us |</a></li>
+				<li class="barra_navegacion"><a href="pages/contact_us.html">Contact Us</a></li>
 			</ul>
 		</nav>
         <!-- Fin barra de navegacion -->
@@ -48,8 +48,8 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul>
                         <li class = navbar_mobile_li><a href="#">Home</a></li>
-                        <li class = navbar_mobile_li><a href="Pages/about_us.html">About Us</a></li>
-                        <li class = navbar_mobile_li><a href="Pages/contact_us.html">Contact Us</a></li>
+                        <li class = navbar_mobile_li><a href="pages/about_us.html">About Us</a></li>
+                        <li class = navbar_mobile_li><a href="pages/contact_us.html">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -67,13 +67,13 @@
                 <div class="seccion_1">
                     <h1>Our Services</h1>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <button class="button_type_1" type="button" onclick="location.href='Pages/about_us.html#our_services'">See More<i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="button_type_1" type="button" onclick="location.href='pages/about_us.html#our_services'">See More<i class="fa-solid fa-arrow-right"></i></button>
                 </div>
                 <!-- Fin parte 1 -->
                 <!-- Parte 2: Imagenes -->
                 <div class="imagenes">
-                    <img id="img1" src="Recursos/Img/imagen_index1.jpeg" alt="Imagen 1">
-                    <img id="img2" src="Recursos/Img/imagen_index2.jpeg" alt="Imagen 2">
+                    <img id="img1" src="recursos/img/imagen_index1.jpeg" alt="Imagen 1">
+                    <img id="img2" src="recursos/img/imagen_index2.jpeg" alt="Imagen 2">
                 </div>
                 <!-- Fin parte 2 -->
             </section>
@@ -132,7 +132,7 @@
                 <!-- Fin titulo -->
                 <!-- Parte 1 -->
                 <div class="reasons">
-                    <i class="fa-solid fa-phone" style="color:#FAFAFA; font-size: 5vh; margin-right: 2vh;"></i>
+                    <i class="fa-solid fa-phone"></i>
                     <div>
                         <h3>Support 24/7</h3>
                         <p>Contact us 24 hours a day at care@support.com</p>
@@ -141,7 +141,7 @@
                 <!-- Fin parte 1 -->
                 <!-- Parte 2 -->
                 <div class="reasons">
-                    <i class="fa-solid fa-dollar-sign" style="color:#FAFAFA; font-size: 5vh; margin-right: 2vh;"></i>
+                    <i class="fa-solid fa-dollar-sign"></i>
                     <div>
                         <h3>Money Back Guarantee</h3>
                         <p>You can return the product within 30 days</p>
@@ -154,63 +154,44 @@
 <!-- Fin del main-->
 
 <!-- Footer -->
-<footer class="footer_lg">
-    <!-- Parte 1: Titulo + Redes -->
-    <div class="titulo_redes">
-        <h2>MG Electrical Services</h2>
-        <div>
-            <i class="fa-brands fa-whatsapp" style="font-size: 1.7em; color: #1F2937; padding-right: 2%;"></i>
-            <i class="fa-brands fa-instagram" style="font-size: 1.7em; color: #1F2937"></i>
+<footer class="container text-center">
+    <div class="row">
+        <div class="col-sm" "col">
+            <!-- Parte 1: Titulo + Redes -->
+            <div class= "titulo_redes">
+                <h2>MG Electrical Services</h2>
+                    <div>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+            </div>
+            <!-- Fin parte 1 -->
+        </div>
+        
+        <div class="col" >
+            <!-- Parte 2: Paginas -->
+            <div class="centrar">
+                    <h3>Company</h3>
+                    <ul class="paginas">
+                        <li><a href="pages/about_us.html">About Us</a></li>
+                        <li><a href="pages/contact_us.html">Contact Us</a></li>
+                    </ul>
+            </div>
+            <!-- Fin parte 2 -->
+        </div>
+
+        <div class="col">
+            <!-- Parte 3: Need more infomation -->
+            <div class="centrar" >
+                <h3>Need more information?</h3>
+                <input type="email" id="mail" name="user_mail" placeholder="Enter your email">
+            </div>
+            <!-- Fin parte 3 -->
         </div>
     </div>
-    <!-- Fin parte 1 -->
-    <!-- Parte 2: Paginas -->
-    <div class="centrar">
-        <h3>Company</h3>
-        <ul class="paginas">
-            <li><a href="Pages/about_us.html">About Us</a></li>
-            <li><a href="Pages/contact_us.html">Contact Us</a></li>
-        </ul>
-    </div>
-    <!-- Fin parte 2 -->
-    <!-- Parte 3: Need more infomation -->
-    <div class="centrar">
-        <h3>Need more information?</h3>
-        <input type="email" id="mail" name="user_mail" placeholder="Enter your email">
-    </div>
-    <!-- Fin parte 3 -->
 </footer>
 <!-- Fin footer -->
 
-<!-- Footer Mobile-->
-<footer class="footer_mobile" class="container-sm">
-    <!-- Parte 1: Titulo + Redes -->
-    <div class="row" class="titulo_redes">
-        <div class = "col-9"><h2>MG Electrical Services</h2></div>
-        <div class = "col-3">
-            <i class="fa-brands fa-whatsapp" style="font-size: 1.7em; color: #1F2937; padding-right: 2%;"></i>
-            <i class="fa-brands fa-instagram" style="font-size: 1.7em; color: #1F2937"></i>
-        </div>
-    </div>
-    <!-- Fin parte 1 -->
-    <!-- Parte 2: Paginas -->
-    <div class="centrar">
-        <h3>Company</h3>
-        <ul class="paginas">
-            <li><a href="#">About Us</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-    </div>
-    <!-- Fin parte 2 -->
-    <!-- Parte 3: Need more infomation -->
-    <div class="centrar">
-        <h3>Need more information?</h3>
-        <input type="email" id="mail" name="user_mail" placeholder="Enter your email">
-    </div>
-    <!-- Fin parte 3 -->
-</footer>
-
-<!-- Fin footer -->
 </body>
 
 <!-- js -->

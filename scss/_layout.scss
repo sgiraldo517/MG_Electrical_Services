@@ -1,0 +1,133 @@
+/* PSEUDO CLASES */
+
+/* Boton 1 */
+
+button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Media Queries Version Mobile */
+
+@media (max-width: 576px) {
+    /* Elementos Ocultos */
+
+    .imagenes, .seccion_3, footer .col .centrar {
+    display: none;
+    }
+
+    /* Navbar Mobile Version */
+
+    .navbar {
+    padding-left: 3vw;
+    }
+
+    .nav_bar_version_mobile {
+    background-color: $primary-color;
+    }
+
+    .navbar ul {
+    padding-top: 1vh;
+    padding-bottom: 0;
+    }
+
+    .navbar_mobile_li a {
+    text-decoration: none;
+    color: #D1D5DB;
+    font-family: $font-type;
+    padding-left: 3vw;
+    }
+
+    /* Media queries Footer */
+
+    footer {
+    display: block;
+    height: fit-content;
+    padding: 3vh;
+    }
+
+    .nav_bar_desktop_version {
+    display: none;
+    }
+
+    footer h2 {
+    padding-left: 5vw;
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    }
+
+    /* Media queries Index */
+
+    article {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    form {
+    .info_inicial {
+        display: flex;
+        flex-direction: column;
+        justify-content: wrap;
+    }
+
+    .form_mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    }
+
+    .form_mobile {
+    padding-top: 2vh;
+    }
+
+    /* Media queries About Us */
+
+    .about_us {
+    height: fit-content;
+    padding-top: 5vh;
+    }
+
+    .opciones {
+    display: block;
+    }
+
+    .seccion_2_about_us h2 {
+    margin: 5vh 10vh 0.5vh;
+    }
+
+    /* Media queries Contact Us*/
+
+    .container_contact_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+
+    iframe {
+    width: 50vw;
+    }
+
+    .seccion_1_contact_us {
+    margin-right: 0;
+    margin-bottom: 2vh;
+    }
+}
+
+/* Media Queries Desktop */
+
+@media (min-width: 576px) {
+    .nav_bar_version_mobile {
+    display: none;
+    }
+
+    iframe {
+        width: 25vw;
+    }
+}

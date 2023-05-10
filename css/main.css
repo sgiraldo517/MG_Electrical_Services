@@ -1,4 +1,4 @@
-/* reset */
+/* RESETS */
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +15,10 @@ ul {
   padding: 0%;
 }
 
-/* Estilos generales */
-/* Header */
+/* VARIABLES */
+/* Colores */
+/* Tipografia */
+/* HEADER */
 header {
   width: 100%;
 }
@@ -45,7 +47,7 @@ nav ul .barra_navegacion a {
   color: #FFFFFF;
 }
 
-/* Seccion 1 */
+/* SECCION 1 */
 .seccion_1 h1 {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
@@ -64,7 +66,7 @@ nav ul .barra_navegacion a {
   margin-top: 2vh;
 }
 
-/* Formularios */
+/* FORMULARIOS */
 form .info_inicial {
   display: flex;
   justify-content: space-evenly;
@@ -103,7 +105,7 @@ form .submit {
   justify-content: center;
 }
 
-/* Botones */
+/* BOTONES */
 .button_type_1 {
   font-family: Work Sans;
   font-size: 20px;
@@ -134,22 +136,23 @@ form .submit {
   margin-bottom: 2vh;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   display: flex;
   justify-content: space-evenly;
-  height: 25vh;
   background: #E5E7EB;
   margin: 0;
   width: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
-footer .centrar {
+footer .col .centrar {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 footer h2 {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -158,7 +161,7 @@ footer h2 {
 }
 footer h3 {
   color: #1F2937;
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -170,12 +173,16 @@ footer .paginas {
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0em;
-  text-align: left;
 }
-footer .titulo_redes {
+footer div .titulo_redes {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+footer div .titulo_redes i {
+  font-size: 1.7em;
+  color: #1F2937;
+  padding-right: 2%;
 }
 footer ul li {
   margin-top: 1vh;
@@ -185,7 +192,7 @@ footer ul li a {
 }
 footer input {
   padding: 1.5vh;
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -232,6 +239,11 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.reasons i {
+  color: #FAFAFA;
+  font-size: 5vh;
+  margin-right: 2vh;
 }
 
 .seccion_1 {
@@ -317,7 +329,6 @@ article {
   flex-direction: column;
   align-items: center;
   margin: 5vh 0;
-  height: -moz-max-content;
   height: max-content;
 }
 .seccion_2_about_us h2 {
@@ -379,6 +390,10 @@ article {
   line-height: 150%;
   color: #FFFFFF;
 }
+.seccion_1_contact_us iframe {
+  border: 0;
+  height: 50vh;
+}
 
 .seccion_2_contact_us {
   background: #FFFFFF;
@@ -411,7 +426,7 @@ article {
   height: 35vh;
 }
 
-/* Pseudo Clases */
+/* PSEUDO CLASES */
 /* Boton 1 */
 button:hover {
   opacity: 80%;
@@ -422,7 +437,7 @@ button:hover {
 /* Media Queries Version Mobile */
 @media (max-width: 576px) {
   /* Elementos Ocultos */
-  .imagenes, .seccion_3, footer .centrar, .footer_lg {
+  .imagenes, .seccion_3, footer .col .centrar {
     display: none;
   }
   /* Navbar Mobile Version */
@@ -439,13 +454,12 @@ button:hover {
   .navbar_mobile_li a {
     text-decoration: none;
     color: #D1D5DB;
-    font-family: "Work Sans";
+    font-family: "Work Sans", sans-serif;
     padding-left: 3vw;
   }
   /* Media queries Footer */
   footer {
     display: block;
-    height: -moz-fit-content;
     height: fit-content;
     padding: 3vh;
   }
@@ -454,7 +468,7 @@ button:hover {
   }
   footer h2 {
     padding-left: 5vw;
-    font-family: "Work Sans";
+    font-family: "Work Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -481,7 +495,6 @@ button:hover {
   }
   /* Media queries About Us */
   .about_us {
-    height: -moz-fit-content;
     height: fit-content;
     padding-top: 5vh;
   }
@@ -506,8 +519,11 @@ button:hover {
   }
 }
 /* Media Queries Desktop */
-@media (min-width: 577px) {
-  .footer_mobile, .nav_bar_version_mobile {
+@media (min-width: 576px) {
+  .nav_bar_version_mobile {
     display: none;
   }
-}/*# sourceMappingURL=styles.css.map */
+  iframe {
+    width: 25vw;
+  }
+}/*# sourceMappingURL=main.css.map */

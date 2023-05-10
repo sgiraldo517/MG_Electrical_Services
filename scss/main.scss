@@ -1,0 +1,249 @@
+@import "base";
+@import "components";
+
+
+/* Estilos Home */
+
+article {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagenes {
+    display: flex;
+    align-items: center;
+
+    #img1 {
+    width: 15vw;
+    height: 15vw;
+    margin-right: 10px;
+    }
+
+    #img2 {
+    width: 20vw;
+    height: 15vw;
+    margin-left: 10px;
+    }
+}
+
+.parte_superior {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vw;
+}
+
+.reasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        color:$six-color; 
+        font-size: 5vh; 
+        margin-right: 2vh;
+    }
+}
+
+.seccion_1 {
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seccion_2 {
+    background: $seven-color;
+    border-radius: 6px;
+    margin: 15px;
+
+    h3 {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $third-color;
+    padding: 5px 10px 0px;
+    margin-left: 1vh;
+    }
+
+    h4 {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $third-color;
+    padding: 0px 10px;
+    margin-left: 1vh;
+    }
+}
+
+.seccion_3 {
+    background: $primary-color;
+    padding: 48px;
+    display: flex;
+    justify-content: space-around;
+
+    h2 {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 36px;
+    line-height: 36px;
+    color: $six-color;
+    }
+
+    h3 {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: $six-color;
+    }
+
+    p {
+    font-family: $font-type;
+    font-style: regular;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: $six-color;
+    }
+}
+
+
+
+/* Estilos About Us */
+
+.about_us {
+    height: 60vh;
+    margin: 0 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion_2_about_us {
+    background: $seven-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+    height: max-content;
+
+    h2 {
+    font-family: $font-type;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: $third-color;
+    padding: 3vh;
+    margin: 5vh 10vh 0.5vh;
+    }
+
+    h3 {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 3vh 10vh 0.5vh;
+    color: $third-color;
+    }
+
+    p {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: $forth-color;
+    padding: 0vh 5vh 10vh 10vh;
+    }
+}
+
+/* Estilos Contact Us */
+
+.container_contact_us {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10vh 5vw;
+    background: #F3F4F6;
+    border-radius: 6px;
+    padding: 5vh;
+}
+
+.seccion_1_contact_us {
+    background-color: #014A73;
+    margin-right: 3vw;
+    padding: 5vh;
+
+    h1 {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: $secondary-color;
+    }
+
+    p {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: $secondary-color;
+    }
+
+    iframe {
+        border:0; 
+        height: 50vh;
+    }
+}
+
+.seccion_2_contact_us {
+    background: $secondary-color;
+    border-radius: 6px;
+}
+
+.seccion_2_contact_us_info_inicial {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.seccion_2_contact_us {
+    h3 {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $third-color;
+    padding: 5vh 10px 0px;
+    margin-left: 1vh;
+    }
+
+    input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    }
+
+    textarea {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    margin-top: 10px;
+    height: 35vh;
+    }
+}
+
+@import "layout"

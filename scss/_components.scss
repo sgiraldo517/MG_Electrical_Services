@@ -1,0 +1,215 @@
+/* HEADER */
+
+header {
+    width: 100%;
+
+    .seccion_logo {
+    background-image: url('../Recursos/Img/Background_portada.jpeg');
+    background-position: 0;
+    background-size: cover;
+    padding: 20px 30px;
+    }
+
+    #logo {
+    width: 300px;
+    }
+}
+
+nav {
+    .menu {
+    background-color: $primary-color;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    }
+
+    ul .barra_navegacion {
+    display: inline;
+    font-family: $font-type;
+    font-style: normal;
+
+    a {
+        color: $secondary-color;
+    }
+    }
+}
+
+/* SECCION 1 */
+
+.seccion_1 {
+    h1 {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    color: $third-color;
+    }
+
+    p {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $forth-color;
+    margin-top: 2vh;
+    }
+}
+
+/* FORMULARIOS */
+
+form {
+    .info_inicial {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0%;
+    }
+
+    input {
+    border: none;
+    border-radius: 4px;
+    height: 5vh;
+    margin-right: 1vh;
+    margin-top: 1vh;
+    }
+
+    .input {
+    padding: 2vh 10px;
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $third-color;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vh;
+    }
+}
+
+.form_index textarea {
+    border: none;
+    border-radius: 4px;
+    height: 10vh;
+    margin-right: 1vh;
+    margin-top: 1vh;
+}
+
+form .submit {
+    display: flex;
+    justify-content: center;
+}
+
+/* BOTONES */
+
+.button_type_1 {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: $fifth-color;
+    padding: 12px 16px;
+    color: $secondary-color;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+.button_type_2 {
+    background: $fifth-color;
+    border-radius: 4px;
+    padding: 2vh 4vh;
+    color: $secondary-color;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+    margin-bottom: 2vh;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: #E5E7EB;
+    margin: 0;
+    width: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    .col .centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    h2 {
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: $third-color;
+    }
+
+    h3 {
+    color: $third-color;
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    }
+
+    .paginas {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    }
+
+    div .titulo_redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    i {
+        font-size: 1.7em; 
+        color: $third-color; 
+        padding-right: 2%;
+    }
+
+    }
+
+    ul li {
+    margin-top: 1vh;
+
+    a {
+        color: $forth-color;
+    }
+    }
+
+    input {
+    padding: 1.5vh;
+    font-family: $font-type;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid #D1D5DB;
+    border-radius: 0px;
+    margin-top: 1vh;
+    }
+
+    .icons {
+    display: flex;
+    }
+}
